@@ -8,11 +8,9 @@
 * **Parameters:** The **ID** parameter supplied through the search input field
 * **Impact:**
 	1. **Confidentiality:** An attacker can steal sensitive user information including passwords.
-	2. **Integrity:** An attacker could potentially change the contents of the database.
-	3. **Availability:**
-	4. **Reputational Damage:**Leaking sensitive information of users can have significant reputational damage.
-	5. **Severity:** **High.** The persistence nature of the **SQLi** and the potential of information leakage makes this a high-severity vulnerability.
-	6. **Likelihood of Exploitation:** **High.** crafting the payload is relatively easy.
+	2. **Reputational Damage:**Leaking sensitive information of users can have significant reputational damage.
+	3. **Severity:** **High.** The persistence nature of the **SQLi** and the potential of information leakage makes this a high-severity vulnerability.
+	4. **Likelihood of Exploitation:** **High.** crafting the payload is relatively easy.
 ## Proof Of Concept(POC)
 1. In the web application navigate to http://127.0.0.1:42001/vulnerabilities/sqli/ 
 2. Locate the search input field at the top of the page
