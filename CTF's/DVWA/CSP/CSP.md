@@ -16,6 +16,7 @@ While this policy attempts to restrict script execution, it contains a critical 
 
 Additionally, the presence of `'unsafe-inline'` in the `script-src` directive is generally a security risk. However, in modern browsers, when a `nonce` (or `hash`) is also specified, the `'unsafe-inline'` keyword for script tags is typically ignored, as the nonce is considered a stronger, more granular control. This was confirmed by browser console messages observed during initial testing:
 ![info message](info_Image.png)
+
 `Content-Security-Policy: Ignoring “'unsafe-inline'” within script-src: nonce-source or hash-source specified`
 
 Attempts to bypass using `javascript:` URIs were also blocked by the browser's strict interpretation of CSP, even with `'unsafe-inline'` present.
