@@ -83,8 +83,9 @@ The CSP challenge effectively highlighted a common misconfiguration in Content S
   **Reporter Information:**
 
   * **Name:** Henry Mate Security Analyst
-  * **Date Discovered:** July 10, 2025
+  * **Date Discovered:** July 25, 2025
 
 **References:**
-* 
+* [Mozilla Security Blog](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP)
+* [CSP reference](https://content-security-policy.com/)
 
