@@ -14,7 +14,7 @@ Nothing unusual just a user not found message
 However putting the famous `' OR 1=1 -- ` payload brought something interesting
 
 ![OR payload](OR-payload.png)    
-response
+response  
 ![forbidden.png](forbidden.png)  
 This implied the server was doing some filtering on the request
 removing the `OR`and replacing it with `||`still brought the same error
