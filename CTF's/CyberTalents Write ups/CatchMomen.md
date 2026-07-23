@@ -2,18 +2,20 @@
 When opening the challenge the first thing visible is  the landing home page.
 In the Nav section there is a link to the log in page.
 
-Clicking the sign up page proved futile as 
-![Sign up page](sign-up.png)
-The next instinct was to try some arbitrary credentials and see the request in burp
-![user-not-found](user-not-found.png)
-burp request
-![burp request](burp-request.png)
+
+Clicking the sign up page proved futile as  
+
+![Sign up page](sign-up.png)  
+The next instinct was to try some arbitrary credentials and see the request in burp  
+![user-not-found](user-not-found.png)  
+burp request  
+![burp request](burp-request.png)  
 Nothing unusual just a user not found message
 However putting the famous `' OR 1=1 -- ` payload brought something interesting
 
-![OR payload](OR-payload.png)
+![OR payload](OR-payload.png)    
 response
-![forbidden.png](forbidden.png)
+![forbidden.png](forbidden.png)  
 This implied the server was doing some filtering on the request
 removing the `OR`and replacing it with `||`still brought the same error
 turns out the server the server was checking for the existance of all the charaters from `OR 1=1`
